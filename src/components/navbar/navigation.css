@@ -1,0 +1,54 @@
+.top {
+  width: 100%;
+  height: 80px;
+  position: sticky; /* stick to the top*/
+  top: 0; /* placed 0 pixels down from the top edge of the containing positioned element.*/
+  display: flex; /*make elements inside this top bar horizontal*/
+  align-items: center; /*align horizontally*/
+  z-index: 999; /*always on top*/
+}
+
+.topLeft {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: left; /*justify vertically left*/
+  margin-left: 80px;
+}
+
+.topLeft > span {
+  color: #ff385c;
+}
+
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center; /*justify horizontally center*/
+  justify-content: center; /*justify vertically center*/
+}
+
+.topRightText {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.topRightIcon {
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.topRightLogin {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center; /*justify horizontally center*/
+  justify-content: center; /*justify vertically center*/
+  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.topRightReg {
+  width: 30px;
+  height: 30px;
+}
